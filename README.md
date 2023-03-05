@@ -18,4 +18,4 @@ layout asm -> go into assembly mode showing all the informations related to my a
 echo $? -> echo out the status code
 bx -> 16 bits of the 32 bits ebx register
 bl -> 8 bits on the 'lower' half of the register (2^0, 2^1, 2^2, etc.)
-echo "set dissasembly-flavour intel" > ~ /.gdbinit -> setup intel syntax (as used by gdb)
+echo "set dissasembly-flavour intel" > ~ /.gdbinit -> setup intel syntax (as used by nasm) instead of AT&T syntax (as used by gdb)
