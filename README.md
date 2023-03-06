@@ -1,5 +1,11 @@
 This repo documents my progress in learning NASM x86 assembly language. Leisure time activity.
 
+"Hello World" in nasm assembly:\
+nasm -felf64 hello.asm && ld -o hello hello.o && ./hello
+
+OR if you already have 'hello' executable simply do:\
+./hello
+
 To get (and run) the executable of files ending with .s do the following:\
 nasm -f elf -o file.o file.s\
 ld -m [elf_i386] file file.o\
@@ -26,4 +32,4 @@ echo $? -> echo out the status code\
 bx -> 16 bits of the 32 bits ebx register\
 bl -> 8 bits on the 'lower' half of the register (2^0, 2^1, 2^2, etc.)\
 echo "set dissasembly-flavour intel" > ~ /.gdbinit -> setup intel syntax (as used by nasm) instead of AT&T syntax (as used by gdb)\
-section .bss -> block starting symbol section is used for reserving space in memory\
+section .bss -> block starting symbol section is used for reserving space in memory
