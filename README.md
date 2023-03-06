@@ -1,10 +1,10 @@
 This repo documents my progress in learning NASM x86 assembly language. Leisure time activity.
 
-To get (and run) the executable of files ending with .s do the following:
-nasm -f elf -o file.o file.s
-ld -m [elf_i386] file file.o
-./file
-echo $?
+To get (and run) the executable of files ending with .s do the following:\
+nasm -f elf -o file.o file.s\
+ld -m [elf_i386] file file.o\
+./file\
+echo $?\
 
 syntax:
 DB -> define byte (8 bits)
